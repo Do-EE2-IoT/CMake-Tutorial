@@ -2,4 +2,5 @@
 1. Create main.cpp
 2. Create CMakeList.txt
 3. mkdir build ; cd build
-4. 
+4. cmake .. 
+5. Make -j $(nproc) , trong đó nproc là số tiến trình đang free
