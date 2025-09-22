@@ -1,0 +1,5 @@
+-------------------------------1---------------------------------
+1. Create main.cpp
+2. Create CMakeList.txt
+3. mkdir build ; cd build
+4. 
