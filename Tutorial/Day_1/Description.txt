@@ -6,3 +6,4 @@
 5. Make -j $(nproc) , trong đó nproc là số tiến trình đang free
 --------------------------------2----------------------------------
 1. Sửa một số thứ trong CMake
+2. 
