@@ -19,3 +19,4 @@ link_libraries(DogLib OtherLib)
 
 add_executable(LearnCMake main.cpp)
 target_compile_definitions(LearnCMake PRIVATE VERSION=${LearnCMake_VERSION_MAJOR})
+install(TARGETS LearnCMake RUNTIME DESTINATION ../)
