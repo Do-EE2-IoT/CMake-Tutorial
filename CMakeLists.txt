@@ -14,14 +14,8 @@ set(CMAKE_BUILD_TYPE RELEASE)
 
 add_library(DogLib SHARED src/dog.cpp)
 target_include_directories(DogLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib)
-
-# add_library(OtherLib SHARED other/other.cpp)
-# target_include_directories(OtherLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/lib)
-#include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
-#link_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/test)
+link_libraries(DogLib OtherLib) 
 
 add_executable(LearnCMake main.cpp)
-target_include_directories(LearnCMake PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/test)
-target_link_directories(LearnCMake PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/test)
-target_link_libraries(LearnCMake DogLib OtherLib) 
 target_compile_definitions(LearnCMake PRIVATE VERSION=${LearnCMake_VERSION_MAJOR})
